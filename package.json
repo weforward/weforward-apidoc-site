@@ -1,0 +1,59 @@
+{
+	"name": "apidoc",
+	"version": "1.6.0",
+	"private": true,
+	"scripts": {
+		"dev": "vue-cli-service serve --open",
+		"install": "npm install",
+		"build-package": "chcp 936 && vue-cli-service build --mode package",
+		"build-public": "chcp 936 && vue-cli-service build --mode public"
+	},
+	"dependencies": {
+		"indent-textarea": "^2.0.2",
+		"vue": "^2.6.6",
+		"vue-json-views": "^1.3.0",
+		"vue-router": "^3.0.7",
+		"weforward-protocol": "^1.0.2"
+	},
+	"devDependencies": {
+		"@vue/cli-plugin-babel": "^3.5.0",
+		"@vue/cli-plugin-eslint": "^3.5.0",
+		"@vue/cli-service": "^3.6.0",
+		"archiver": "^3.1.1",
+		"babel-eslint": "^10.0.1",
+		"cross-env": "^7.0.2",
+		"eslint": "^5.8.0",
+		"eslint-plugin-vue": "^5.0.0",
+		"js-base64": "^2.5.2",
+		"vue-template-compiler": "^2.5.21",
+		"weforward-builder": "^1.0.1"
+	},
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"node": true
+		},
+		"extends": [
+			"plugin:vue/essential",
+			"eslint:recommended"
+		],
+		"rules": {
+			"no-console": "off",
+			"no-useless-escape": "off",
+			"no-unused-vars": "off"
+		},
+		"parserOptions": {
+			"parser": "babel-eslint"
+		}
+	},
+	"postcss": {
+		"plugins": {
+			"autoprefixer": {}
+		}
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"not ie <= 8"
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"goodStates": [{
+			"value": 0,
+			"name": "全部"
+		},
+		{
+			"value": 1,
+			"name": "销售中"
+		},
+		{
+			"value": 2,
+			"name": "停售中"
+		}
+	]
+}
