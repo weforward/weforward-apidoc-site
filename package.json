@@ -26,7 +26,7 @@
 		"eslint-plugin-vue": "^5.0.0",
 		"js-base64": "^2.5.2",
 		"vue-template-compiler": "^2.5.21",
-		"weforward-builder": "^1.0.1"
+		"weforward-builder": "^1.0.5"
 	},
 	"eslintConfig": {
 		"root": true,
