@@ -1,6 +1,6 @@
 {
 	"name": "apidoc",
-	"version": "1.6.0",
+	"version": "3.0.0",
 	"private": true,
 	"scripts": {
 		"dev": "vue-cli-service serve --open",
