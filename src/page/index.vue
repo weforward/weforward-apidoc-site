@@ -576,7 +576,6 @@ export default {
 			}
 		},
 		getDocData() {
-			// http://lhoninyun.navboy.com
 			let baseurl = this.$route.query.url||this.$wf.getBaseUrl();
 			this.message = null;
 			this.$wf

@@ -13,8 +13,14 @@
 				<div v-if="resUrl!=''" class="test-request-result-item">
 					<p class="font_bold test-request-result-warp-title">upload:</p>
 					<div class="test-request-result-item">
-						<input type="file" @change="getFile($event,'file1')">
 						<span class="font_14 upload" @click="submitForm($event)">上传</span>
+						<input type="file" @change="getFile($event,'file1')">
+					</div>
+				</div>
+				<div v-if="resUrl!=''" class="test-request-result-item">
+					<p class="font_bold test-request-result-warp-title">download:</p>
+					<div class="test-request-result-item">
+						<span class="font_14 upload" @click="downFile">下载</span>
 					</div>
 				</div>
 			</section>
@@ -72,6 +78,9 @@
 				}).catch((error) => {
 					msgview.msgwarn("上传异常" + error).hide(1000);
 				});
+			},
+			downFile(){
+				window.location.href = this.resUrl;
 			}
 		}
 	};
@@ -105,7 +114,8 @@
 		cursor: pointer;
 		padding: 5px 10px;
 		border-radius: 3px;
-		margin-left: 10px;
+		margin-left: 5px;
+		margin-right: 20px;
 		font-weight: normal;
 		background-color: #095280;
 		color: white;

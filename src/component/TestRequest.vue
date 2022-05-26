@@ -159,6 +159,8 @@
 				}
 				if (accessKey.length == 64) {
 					accessKey = hexToBase64(accessKey);
+				}else{
+					accessKey = decodeURIComponent(accessKey);
 				}
 				_config.wfconfig.accessId = accessId && accessKey ? accessId : '';
 				_config.wfconfig.accessKey = accessId && accessKey ? accessKey : '';
